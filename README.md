@@ -138,6 +138,10 @@ alpha = output range / input range =  255 / ( max(I) - min(I) )`
 `min(O) = alpha * min(I) + beta
 beta = -min(I) * alpha`
 
+### Auto Exposure
+* If too much light strikes the image sensor, the image will be overexposed, washed out, and faded.
+* If too little light reaches the camera sensor produces an underexposed image, dark and lacking in details, especially in shadow areas.
+* Auto Exposure is applied to images so that such unevenness in differently exposed areas of an image are corrected.
 ### Gamma Correction
 * Gamma correction is also known as the Power Law Transform. 
 * First, our image pixel intensities must be scaled from the range [0, 255] to [0, 1.0]. From there, we obtain our output gamma corrected image by applying the following equation:
